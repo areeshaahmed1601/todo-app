@@ -2,14 +2,19 @@ import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';  
 import { Todo } from "../../Todo";
 
+
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  template: `<ejs-grid [dataSource]='todos> </ejs-grid>`,
+  styleUrls: ['./todos.component.css'],
+ 
 })
 export class TodosComponent implements OnInit {
+ 
   localItem: string;
   todos:Todo[];
+  Grid: any;
   constructor() { 
     this.localItem = localStorage.getItem("todos");
     if(this.localItem == null){
@@ -22,7 +27,10 @@ export class TodosComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    
   }
+
+ 
 
   deleteTodo(todo:Todo){
     console.log(todo);

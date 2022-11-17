@@ -9,8 +9,11 @@ import { AddTodoComponent } from './MyComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
 import { GridComponent } from './MyComponents/grid/grid.component';
+import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
     TodosComponent,
@@ -23,6 +26,7 @@ import { GridComponent } from './MyComponents/grid/grid.component';
     AppRoutingModule,
     FormsModule,
     GridComponent
+    GridModule, PagerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
