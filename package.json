@@ -23,7 +23,13 @@
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@syncfusion/ej2-material-theme": "~20.3.56",
+    "@syncfusion/ej2-buttons": "16.2.46",
+    "@syncfusion/ej2-ng-grids": "16.2.50",
+    "@syncfusion/ej2-file-utils": "16.2.50",
+    "@syncfusion/ej2-ng-calendars": "16.2.46",
+    "@syncfusion/ej2-ng-dropdowns": "16.2.48"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.8",
